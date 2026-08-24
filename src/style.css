@@ -1,0 +1,89 @@
+:root {
+  /* Colors */
+  --primary: #f5f5f5;
+  --secondary: #e0e0e0;
+  --accent-p: #813232;
+  --accent-s: #393838;
+  --accent-t: #009688;
+  --primary-text: #ffffff;
+  --secondary-text: #000000;
+
+  /* Button states */
+  --btn-hover-p: #c0c0c0;
+  --btn-hover-s: #c0c0c0;
+  --btn-press-p: #a0a0a0;
+  --btn-press-s: #a0a0a0;
+
+  /* Text sizes */
+  --text-header: 5rem;
+  --text-title: 2.5rem;
+  --text-content: 1.5rem;
+  --text-label: 1rem;
+
+  /* Borders & radius */
+  --brdr-thick-md: 2px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 32px;
+
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-slow: 0.6s ease;
+
+  /* Spacing */
+  --spacing-sm: 8px;
+  --spacing-md: 16px;
+  --spacing-lg: 24px;
+  --spacing-xl: 32px;
+  --spacing-xxl: 64px;
+
+  /* Button */
+  --btn-padding: var(--spacing-lg) 10px;
+
+  /* Clock */
+  --clock-gap: var(--spacing-md);
+  --clock-padding: var(--spacing-lg) 32px;
+  --clock-number-size: var(--text-header);
+  --clock-label-size: var(--text-title);
+
+  /* Font */
+  --font-family: 'DancingScript', italic;
+  --font-weight-base: 500;
+}
+
+#app {
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-base);
+}
+
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../src/assets/fonts/DancingScript-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../src/assets/fonts/DancingScript-Medium.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../src/assets/fonts/DancingScript-Regular.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+@font-face {
+  font-family: 'DancingScript';
+  src: url('../src/assets/fonts/DancingScript-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  font-weight: var(--font-weight-base);
+}
