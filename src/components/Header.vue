@@ -2,7 +2,7 @@
 import { useLanguage } from '../stores/language';
 import CountdownClock from './CountdownClock.vue';
 import Text from './Text.vue';
-import FlagIcon from 'vue3-flag-icons'
+import CountryFlag from 'vue-country-flag-next'
 
 const { isPolish, toggleLanguage } = useLanguage()
 </script>
@@ -10,7 +10,7 @@ const { isPolish, toggleLanguage } = useLanguage()
 <template>
       <div class="clockContainer">
           <div @click="toggleLanguage()" class="lang-switcher">
-            <FlagIcon :code="isPolish ? 'pl' : 'gb'" />
+            <CountryFlag :country="isPolish ? 'pl' : 'gb'" />
             <Text text="Polski" textEng="English" size="label"/>
           </div>
         <div class="namesContainer">
@@ -19,7 +19,7 @@ const { isPolish, toggleLanguage } = useLanguage()
           <Text text="Szymon Synaszko" text-eng="Szymon Synaszko" size="header"/>
         </div>
         <Text text="Do ślubu pozostało:" textEng="Countdown to the Wedding" size="title" />
-        <CountdownClock :targetDate="new Date('2027-10-24T15:30:00Z')" />
+        <CountdownClock :targetDate="new Date('2027-09-24T15:30:00Z')" />
       </div>
 </template>
 
@@ -56,6 +56,8 @@ const { isPolish, toggleLanguage } = useLanguage()
   top: var(--spacing-md);
   right: var(--spacing-md);
   z-index: 1000;
+  display: flex;
+  flex-direction: column;
 }
 @media screen and (max-width: 768px) {
   .namesContainer > *:nth-child(1) { transform: translateX(5%); }

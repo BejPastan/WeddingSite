@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed, onBeforeUnmount, onMounted, ref } from 'vue'
-import { useLanguage } from '../stores/language'
+//import { useLanguage } from '../stores/language'
 import Text from './Text.vue';
 
 const props = defineProps<{
@@ -82,7 +82,7 @@ const pad = (n: number) => String(n).padStart(2, '0')
 
 defineExpose({ isPast })
 
-const { isPolish } = useLanguage()
+//const { isPolish } = useLanguage()
 </script>
 
 <template>

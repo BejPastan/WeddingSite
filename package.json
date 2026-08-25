@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "vue": "^3.5.40",
-    "vue-country-flag": "^2.3.2",
+    "vue-country-flag-next": "^2.3.2",
     "vue-flag-icon": "^2.1.0",
     "vue3-flag-icons": "^0.1.7"
   },

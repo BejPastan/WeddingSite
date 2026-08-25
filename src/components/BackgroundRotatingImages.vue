@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed, onMounted, ref } from 'vue';
+import { onMounted, ref } from 'vue';
 
 
 const loadedImages = ref<string[]>([])
@@ -70,11 +70,12 @@ async function imagesChangeCorutine()
 .current-bg, .next-bg {
   position: fixed;
   top: 0;
-  left: 0;
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
 }
+
+
 .current-bg {
   z-index: -1;
   animation: fadeInOut 5s infinite;

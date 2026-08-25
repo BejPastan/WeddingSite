@@ -23,7 +23,7 @@ const scrollTo = (target: string) => {
 }
 
 onMounted(() => {
-  const entries: IntersectionObserverEntry[] = []
+  //const entries: IntersectionObserverEntry[] = []
   const io = new IntersectionObserver(
     (observed) => {
       observed.forEach((entry) => {
