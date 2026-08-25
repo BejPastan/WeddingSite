@@ -69,7 +69,7 @@ async function imagesChangeCorutine()
 
 .current-bg, .next-bg {
   position: fixed;
-  top: 0;
+  top: -200px;
   min-width: 100%;
   min-height: 100%;
   overflow: hidden;
